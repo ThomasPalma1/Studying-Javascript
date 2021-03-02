@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 14</title>
+    <script>
+
+        function ordenarNumeros(a,b) { //criando essa função, será feito a verificação de menor ou maior e assim, arruando as posições
+            return a-b;
+        }
+        var megasena =  new Array (43, 10, 3, 2, 1, 59);
+         megasena.sort(ordenarNumeros); //quando for testar, o sort não vai funcionar para essa sequência numérica; pq a ordem que ele aplica é de string, ele considera que a posição 1, do número 10, está na frente do 2, pois não é ordenação numérica, é string
+         console.log(megasena);
+      
+        // var salada = new Array();
+        // salada[0] = "Uva";
+        // salada[1] = "Mamão";
+        // salada[2] = "Pêra";
+        // salada[3] = "Maçã";
+
+        // salada.sort(); //organiza em ordem alfabética
+        // console.log(salada)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
