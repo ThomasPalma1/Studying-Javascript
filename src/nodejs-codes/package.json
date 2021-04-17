@@ -1,0 +1,26 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "npm",
+    "express",
+    "fs",
+    "path",
+    "url",
+    "mongobd",
+    "udp",
+    "crypto"
+  ],
+  "author": "Thomas Palma",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
+}
