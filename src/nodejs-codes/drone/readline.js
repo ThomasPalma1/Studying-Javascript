@@ -1,3 +1,5 @@
+//script que seria utilizado caso eu tivesse um drone DJI
+
 const readline = require ('readline')
 
 const rl = readline.createInterface({
