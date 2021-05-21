@@ -1,3 +1,14 @@
 ### acessando via get
 GET http://localhost:3000/subs
 ###
+POST http://localhost:3000/subs
+Content-Type: application/json
+
+{
+    "userName": "teste",
+    "userChannel": "teste"
+}
+###
+GET http://localhost:3000/subs/60a7051a321a610ee41d3bd2
+###
+DELETE http://localhost:3000/subs/60a7051a321a610ee41d3bd2
