@@ -29,8 +29,19 @@ router.post('/', async (req, res) => {
     }
 })
 
-router.patch('/:id', getSubs, (req, res) => {
-
+router.patch('/:id', getSubs, async(req, res) => {
+        if(req.body.userName != null) {
+            res.inscritoss.userName = req.body.userName
+        }
+        if(req.body.userChannel != null) {
+            res.inscritoss.userChannel = req.body.userChannel
+        }
+        try {
+            const updateSubs = await res.inscritoss.save()
+            res.json(updateSubs)
+        } catch (error) {
+            res.status(400).json({message: error.message})
+        }
 })
 
 router.delete('/:id', getSubs, async (req, res) => {

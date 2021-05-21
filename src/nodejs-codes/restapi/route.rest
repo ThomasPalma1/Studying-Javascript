@@ -11,4 +11,12 @@ Content-Type: application/json
 ###
 GET http://localhost:3000/subs/60a7051a321a610ee41d3bd2
 ###
-DELETE http://localhost:3000/subs/60a7051a321a610ee41d3bd2
+DELETE http://localhost:3000/subs/60a70c650979e134b856badf
+###
+PATCH http://localhost:3000/subs/60a7150528367618c049acd8
+Content-Type: application/json
+
+{
+    "userName": "Thomas",
+    "userChannel": "PalmaDev"
+}
